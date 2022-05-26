@@ -7,12 +7,12 @@ export class Service {
     id: number
 
     @Column()
-    serviceImage: string
+    image: string
 
     @Column()
-    serviceName: string
+    title: string
 
     @Column()
-    serviceDescription: string
+    description: string
 
 }
