@@ -1,34 +1,41 @@
 import React from "react";
-import { FooterContainer } from "./styles";
-import {LogoKEEP, Insta, Whatsapp, Youtube, Citi } from '../../assets';
+import { FooterContainer, FooterContent, Signature } from "./styles";
+import {LogoKEEP, Insta, Whatsapp, Youtube, Citi, Heart } from '../../assets';
 
 export const Footer: React.FC = () => {
     return (
         <FooterContainer>
-            <div className="">
+            <FooterContent>
                 <img src={LogoKEEP} alt="Logo da KEEP Movement"/>
 
-                <div>
+                <nav>
                     <p>Onde você pode nos achar</p>
                     <ul>
                         <li><a href=""><img src={Insta} alt="Ícone do Instagram"/></a></li>
                         <li><a href=""><img src={Whatsapp} alt="Ícone do Whatsapp"/></a></li>
                         <li><a href=""><img src={Youtube} alt="Ícone do Youtube"/></a></li>
                     </ul>
-                </div>
-            </div>
+                </nav>
+            </FooterContent>
 
-            <div className="line"></div>
+            <div></div>
 
-            <p>
+            <Signature>
                 Made with 
+                {' '}
                 &lt; &#x0002F; &gt; 
+                {' '}
                 and 
-                &hearts; 
+                {'  '}
+                <img src={ Heart } alt="Love"/>
+                {'  '}
                 by 
-                <span><img src={Citi} alt="logo do CITi"/></span>
-            </p>
+                {'  '}
+                <img src={Citi} alt="CITi"/>
+            </Signature>
+    
         </FooterContainer>
+           
     );
 }
 
