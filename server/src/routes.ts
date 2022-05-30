@@ -1,13 +1,13 @@
 import express from 'express';
-import UserController from '@controllers/UserController'
+import BannerController from '@controllers/BannerController'
 
 const routes = express.Router();
-const userController = new UserController();
+const bannerController = new BannerController();
 
-routes.post('/user', userController.create);
-routes.get('/user', userController.get);
-routes.delete('/user/:id', userController.delete);
-routes.put('/user/:id', userController.update);
+routes.post('/banner', bannerController.create);
+routes.get('/banner', bannerController.get);
+routes.delete('/banner/:id', bannerController.delete);
+routes.put('/banner/:id', bannerController.update);
 
 
 export default routes;
