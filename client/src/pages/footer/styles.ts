@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
+
 export const FooterContainer = styled.div` 
+    
+    margin:0px;
+    
     width: 100%;
     height: 256px;
 
@@ -23,6 +27,7 @@ export const FooterContainer = styled.div`
             margin-bottom:23px;
             font-size: 16px;
             font-family: 'Sora', sans-serif;
+            color: #FFFFFF;
         }
 
         ul{
@@ -55,4 +60,5 @@ export const Signature = styled.p`
     align-self: center;
     font-weight: 400;
     font-family: 'Sora', sans-serif;
+    color: #FFFFFF;
 `;

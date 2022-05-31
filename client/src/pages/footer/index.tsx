@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
                 {'  '}
                 by 
                 {'  '}
-                <img src={Citi} alt="CITi"/>
+                <img src={Citi} alt="CITi"/> 
             </Signature>
     
         </FooterContainer>

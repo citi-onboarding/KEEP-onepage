@@ -4,18 +4,15 @@ import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
 
-import { Home, Footer } from './pages';
+import { Footer } from './pages';
 
 function App() {
   return (
-    <>
+  
     <ThemeProvider theme={theme}>
-      <Home/>
+      <Footer/>
       <GlobalStyle/>
     </ThemeProvider>
-
-    <Footer/>
-    </>
     
   );
 }
