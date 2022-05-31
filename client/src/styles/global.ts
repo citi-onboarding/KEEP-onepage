@@ -22,12 +22,15 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: ${(props) => props.theme.colors.background};
     color: ${(props) => props.theme.colors.text};
-    font: 400 16px Roboto, sans-serif;
+    font: 400 16px Monument Extended, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 
   body {
-    font-family: sans-serif;
+    @font-face {
+      font-family: 'Monument Extended';
+      src:  url('./assets/MonumentExtended-FreeForPersonalUse') format('opentype');
+    }
   }
 
   button {

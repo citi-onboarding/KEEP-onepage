@@ -17,33 +17,42 @@ export const FooterContainer = styled.div`
     nav{
         display: flex;
         flex-direction: column;
-
+        justify-content: right;
+        
         p{
             margin-bottom:23px;
             font-size: 16px;
+            font-family: 'Sora', sans-serif;
         }
 
         ul{
+            width: 197px;
             display: flex;
             flex-direction: row;
             list-style-type: none;
             gap: 32px;
+            margin-left: 20px;
         }
     }
 `;
 
 export const FooterContent = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-    box-sizing: border-box;
-    padding-bottom:40px;
-    border-bottom: 1px solid #FFFFFF 
+  box-sizing: border-box;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #FFFFFF;
+    
+  
 `;
+
 
 export const Signature = styled.p`
     font-size: 18px;
     margin-top: 24px;
     align-self: center;
+    font-weight: 400;
+    font-family: 'Sora', sans-serif;
 `;
