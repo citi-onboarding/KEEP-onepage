@@ -22,7 +22,7 @@ export const HomeContainer = styled.div`
   }
   
   p {
-
+    font-family: Monument Extended;
     font-size: 20px;
     margin-top: 24px;
     line-height: 32px;
