@@ -5,12 +5,12 @@ import { Citi, Crud } from '../global';
 export default class AudiovisualController implements Crud {
 
     async create(request: Request, response: Response){
-        const { url } = request.body
+        const { media } = request.body
 
-        const isAnyUndefined = Citi.areValuesUndefined(url);
+        const isAnyUndefined = Citi.areValuesUndefined(media);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newElementOfAudiovisual = { url };
+        const newElementOfAudiovisual = { media };
         const {httpStatus, message } = await Citi.insertIntoDatabase(Audiovisual, newElementOfAudiovisual);
 
         return response.status(httpStatus).send({ message });
@@ -33,12 +33,12 @@ export default class AudiovisualController implements Crud {
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        const { url } = request.body;
+        const { media } = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(url, id);
+        const isAnyUndefined = Citi.areValuesUndefined(media, id);
         if(isAnyUndefined) return response.status(400).send();
 
-        const audiovisualWithUpdatedValues = { url };
+        const audiovisualWithUpdatedValues = { media };
 
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(Audiovisual, id, audiovisualWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });

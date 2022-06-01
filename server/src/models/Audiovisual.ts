@@ -6,5 +6,5 @@ export class Audiovisual {
     id: number
 
     @Column()
-    url: string
+    media: string
 }

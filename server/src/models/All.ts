@@ -7,5 +7,5 @@ export class All {
     id: number
 
     @Column()
-    url: string
+    media: string
 }
