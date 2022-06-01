@@ -1,8 +1,12 @@
 import React from "react";
-import { FooterContainer, FooterContent, Signature } from "./styles";
+import { FooterContainer, FooterContent, Signature, InstagramIcon, YoutubeIcon, WhatsappIcon } from "./styles";
 import {LogoKEEP, Insta, Whatsapp, Youtube, Citi, Heart } from '../../assets';
 
 export const Footer: React.FC = () => {
+    const changeImg = () => {
+        document.getElementById('instagram')
+    }
+    
     return (
         <FooterContainer>
             <FooterContent>
@@ -11,9 +15,9 @@ export const Footer: React.FC = () => {
                 <nav>
                     <p>Onde você pode nos achar</p>
                     <ul>
-                        <li><a href=""><img src={Insta} alt="Ícone do Instagram"/></a></li>
-                        <li><a href=""><img src={Whatsapp} alt="Ícone do Whatsapp"/></a></li>
-                        <li><a href=""><img src={Youtube} alt="Ícone do Youtube"/></a></li>
+                        <li><InstagramIcon><a href=""></a></InstagramIcon></li>
+                        <li><WhatsappIcon><a href=""></a></WhatsappIcon></li>
+                        <li><YoutubeIcon><a href=""></a></YoutubeIcon></li>
                     </ul>
                 </nav>
             </FooterContent>
@@ -33,9 +37,10 @@ export const Footer: React.FC = () => {
                 {'  '}
                 <img src={Citi} alt="CITi"/> 
             </Signature>
-    
+
+            
         </FooterContainer>
-           
+          
+    
     );
 }
-

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Insta, InstaHover, Whatsapp, WhatsappHover, Youtube, YoutubeHover } from '../../assets';
 
 
 export const FooterContainer = styled.div` 
@@ -37,7 +38,13 @@ export const FooterContainer = styled.div`
             list-style-type: none;
             gap: 32px;
             margin-left: 20px;
+
+            li{
+                width: 40px;
+                height: 40px;
+            }
         }
+        
     }
 `;
 
@@ -61,4 +68,40 @@ export const Signature = styled.p`
     font-weight: 400;
     font-family: 'Sora', sans-serif;
     color: #FFFFFF;
+`;
+
+export const InstagramIcon = styled.div`
+    background-image: url(${Insta});
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+
+    &:hover{
+        background-image: url(${InstaHover});
+    }
+`;
+
+export const WhatsappIcon = styled.div`
+    background-image: url(${Whatsapp});
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+
+    &:hover{
+        background-image: url(${WhatsappHover});
+    }
+`;
+
+export const YoutubeIcon = styled.div`
+    background-image: url(${Youtube});
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 40px;
+
+    &:hover{
+        background-image: url(${YoutubeHover});
+    }
 `;
