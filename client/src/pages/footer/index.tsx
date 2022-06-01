@@ -15,9 +15,9 @@ export const Footer: React.FC = () => {
                 <nav>
                     <p>Onde você pode nos achar</p>
                     <ul>
-                        <li><InstagramIcon><a href=""></a></InstagramIcon></li>
-                        <li><WhatsappIcon><a href=""></a></WhatsappIcon></li>
-                        <li><YoutubeIcon><a href=""></a></YoutubeIcon></li>
+                        <li><a href="https://www.instagram.com/keep.movement/" target="_blank"><InstagramIcon></InstagramIcon></a></li>
+                        <li><a href="https://api.whatsapp.com/send/?phone=5581988161476&text&app_absent=0" target="_blank"><WhatsappIcon></WhatsappIcon></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCY9IUqGI5QNf1A4lR_WvFiQ" target="_blank"><YoutubeIcon></YoutubeIcon></a></li>
                     </ul>
                 </nav>
             </FooterContent>
