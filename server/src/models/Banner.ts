@@ -7,7 +7,7 @@ export class Banner {
     id: number;
 
     @Column()
-    image: string;
+    media: string;
 
     @Column()
     title: string;
