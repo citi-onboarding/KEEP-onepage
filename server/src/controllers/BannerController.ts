@@ -5,12 +5,12 @@ import { Citi, Crud } from '../global'
 export default class BannerController implements Crud{
 
     async create(request: Request, response: Response){
-        const { image, title } = request.body;
+        const { media, title } = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(image, title);
+        const isAnyUndefined = Citi.areValuesUndefined(media, title);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newBanner = { image, title };
+        const newBanner = { media, title };
         const {httpStatus, message} = await Citi.insertIntoDatabase(Banner, newBanner);
 
         return response.status(httpStatus).send({ message });
@@ -33,12 +33,12 @@ export default class BannerController implements Crud{
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        const {image, title } = request.body;
+        const {media, title } = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(image, title, id);
+        const isAnyUndefined = Citi.areValuesUndefined(media, title, id);
         if(isAnyUndefined) return response.status(400).send();
 
-        const bannerWithUpdatedValues = { image, title };
+        const bannerWithUpdatedValues = { media, title };
 
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(Banner, id, bannerWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });
