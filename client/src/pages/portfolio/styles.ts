@@ -18,9 +18,10 @@ export const PortfolioContainer = styled.div`
         text-align: center;
     }
     nav{
+        display: flex;
+        flex-direction: row;
         margin-top: 80px;
-        color: #ffffff;
-        font-size: 18px;
+        gap:40px;
     }
 
     section{
