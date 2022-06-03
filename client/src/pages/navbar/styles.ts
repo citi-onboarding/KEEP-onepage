@@ -2,13 +2,12 @@ import styled from 'styled-components';
 
 
 export const NavbarContainer = styled.div`
-    width: 100;
+    width: 100%;
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background: linear-gradient(180deg, rgba(26, 26, 26, 0.8) 0%, rgba(26, 26, 26, 0) 100%);
-    width: 1366px;
     height: 124px;
     left: 0px;
     top: 0px;
