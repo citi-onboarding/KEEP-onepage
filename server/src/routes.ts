@@ -21,7 +21,6 @@ routes.get('/all', allController.get);
 routes.delete('/all/:id', allController.delete);
 routes.put('/all/:id', allController.update);
 
-
 routes.post('/audiovisual', audiovisualController.create);
 routes.get('/audiovisual', audiovisualController.get);
 routes.delete('/audiovisual/:id', audiovisualController.delete);
