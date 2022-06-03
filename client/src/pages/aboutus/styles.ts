@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const AboutUsContainer = styled.div`
   background-color: #141414;
+  
   display: flex;
   flex-direction: row;
   justify-content: center;
