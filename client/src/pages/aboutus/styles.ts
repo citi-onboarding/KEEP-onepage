@@ -85,12 +85,10 @@ export const AboutUsContainer = styled.div`
     color: #141414;
   }
 
-  :active{
-    button{
-      background-color: #1A1A1A;
-      border: #1A1A1A;
-      color: #FFFFFF;
-    }
+  button:active{
+    background-color: #1A1A1A;
+    border: #1A1A1A;
+    color: #FFFFFF;
   }
-  
+
 `;
