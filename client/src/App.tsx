@@ -12,9 +12,9 @@ function App() {
   return (
   
     <ThemeProvider theme={theme}>
-      <Footer/>
-      <Contact/>
       <Navbar/>
+      <Contact/>
+      <Footer/>
       <GlobalStyle/>
     </ThemeProvider>
     
