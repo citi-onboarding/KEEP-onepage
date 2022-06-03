@@ -1,5 +1,6 @@
+import { Contact } from './contact'
 import { Navbar } from './navbar';
 
 export {
-    Navbar
+    Contact, Navbar,
 };
