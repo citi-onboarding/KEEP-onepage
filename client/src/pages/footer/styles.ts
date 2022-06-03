@@ -23,6 +23,7 @@ export const FooterContainer = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: right;
+
         
         p{
             margin-bottom:23px;
@@ -37,12 +38,9 @@ export const FooterContainer = styled.div`
             flex-direction: row;
             list-style-type: none;
             gap: 32px;
+            justify-content: flex-end;
+            align-items: flex-end;
             margin-left: 20px;
-
-            li{
-                width: 40px;
-                height: 40px;
-            }
         }
         
     }
