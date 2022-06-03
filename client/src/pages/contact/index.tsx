@@ -20,9 +20,9 @@ export const Contact: React.FC = () => {
                 
                 <select style={{color: 'white'}}>
                     <option style={{display: 'none'}} value="0" ></option>
-                    <option style={{color: 'black'}} value="1" >Option 1</option>
-                    <option style={{color: 'black'}} value="2">Option 2</option>
-                    <option style={{color: 'black'}} value="3">Option 3</option>
+                    <option style={{color: '#141414'}} value="1" >Option 1</option>
+                    <option style={{color: '#141414'}} value="2">Option 2</option>
+                    <option style={{color: '#141414'}} value="3">Option 3</option>
                     </select>
         
                 <label>Nos conte a sua ideia! </label>
