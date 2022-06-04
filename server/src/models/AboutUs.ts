@@ -7,9 +7,12 @@ export class AboutUs {
     id: number
 
     @Column()
-    title: string
+    mission_title: string
 
     @Column()
-    description: string
+    mission_description: string
+
+    @Column()
+    grid_title: string
 
 }

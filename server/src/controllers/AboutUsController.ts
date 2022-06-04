@@ -5,12 +5,12 @@ import { Citi, Crud } from '../global'
 export default class AboutUsController implements Crud {
 
     async create(request: Request, response: Response){
-        const {title, description} = request.body;
+        const {mission_title, mission_description, grid_title} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(title, description);
+        const isAnyUndefined = Citi.areValuesUndefined(mission_title, mission_description, grid_title);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newAboutUs = { title, description };
+        const newAboutUs = { mission_title, mission_description, grid_title };
         const {httpStatus, message} = await Citi.insertIntoDatabase(AboutUs, newAboutUs);
 
         return response.status(httpStatus).send({ message });
@@ -33,12 +33,12 @@ export default class AboutUsController implements Crud {
 
     async update(request: Request, response: Response){
         const { id } = request.params;
-        const {title, description } = request.body;
+        const { mission_title, mission_description, grid_title } = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(title, description, id);
+        const isAnyUndefined = Citi.areValuesUndefined(mission_title, mission_description, grid_title, id);
         if(isAnyUndefined) return response.status(400).send();
 
-        const aboutusWithUpdatedValues = { title, description };
+        const aboutusWithUpdatedValues = { mission_title, mission_description, grid_title };
 
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(AboutUs, id, aboutusWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });
