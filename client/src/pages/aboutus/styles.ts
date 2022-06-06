@@ -8,7 +8,7 @@ export const AboutUsContainer = styled.div`
   flex-direction: row;
   justify-content: center;
 
-  .sidea{
+  .title{
     flex-direction: column;
     width: 426px;
     height: 114px;
@@ -18,7 +18,7 @@ export const AboutUsContainer = styled.div`
     
   }
 
-  .sideb{
+  .description{
     flex-direction: column;
     width: 497px;
     height: 132px;
