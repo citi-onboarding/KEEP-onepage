@@ -25,7 +25,6 @@ export const PortfolioContainer = styled.div`
     }
 
     section{
-        background-color: #f5f5f5;
         margin-top: 40px;
     }
 

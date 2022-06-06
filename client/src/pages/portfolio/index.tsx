@@ -1,6 +1,8 @@
 import React from "react";
 import { PortfolioContainer } from "./styles";
 import { Option } from "../../components/option";
+import { Grid  } from "../../components/grid";
+import {Storie, Video, Imagem} from '../../assets'
 
 export const Portfolio: React.FC = () => {
     return (
@@ -15,7 +17,19 @@ export const Portfolio: React.FC = () => {
 
         </nav>
 
-        <section>grid vai ficar aqui</section>
+        <section>
+            <Grid
+            media1 = {Imagem}
+            media2 = {Imagem}
+            media3 = {Imagem}
+            media4 = {Imagem}
+            media5 = {Video}
+            media6 = {Storie}
+            media7 = {Imagem}
+            media8 = {Imagem}
+            />
+
+        </section>
 
 
 

@@ -7,6 +7,8 @@ import { GlobalStyle } from './styles/global';
 import { Portfolio } from './pages';
 
 function App() {
+
+  console.log('estou funcionando')
   return (
     <ThemeProvider theme={theme}>
       <Portfolio/>
