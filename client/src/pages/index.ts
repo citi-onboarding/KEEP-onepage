@@ -1,5 +1,7 @@
-import { Home } from './home';
+import { Footer } from './footer'
+import { Contact } from './contact'
+import { Navbar } from './navbar';
 
 export {
-    Home
+    Footer, Contact, Navbar,
 };
