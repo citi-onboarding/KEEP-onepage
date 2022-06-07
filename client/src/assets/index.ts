@@ -1,5 +1,5 @@
 import LogoCITi from './logo.png';
-import Union from './Union.png'
+import Union from './union.png'
 import ActiveBanner from './ActiveBanner.png';
 import HoverBanner from './HoverBanner.png';
 import LAUNCH from './LAUNCH.mp4';
