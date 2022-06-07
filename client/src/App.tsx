@@ -3,14 +3,20 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
-import { AboutUs } from './pages/aboutus';
+import { Footer } from './pages';
+import { Contact } from './pages/contact';
+import { Navbar } from './pages';
 
-function App(): JSX.Element {
+function App() {
   return (
+  
     <ThemeProvider theme={theme}>
-      <AboutUs/>
+      <Navbar/>
+      <Contact/>
+      <Footer/>
       <GlobalStyle/>
     </ThemeProvider>
+    
   );
 }
 
