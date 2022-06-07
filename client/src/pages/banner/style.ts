@@ -10,6 +10,7 @@ export const BannerContainer = styled.div`
     font-size: 40px;
     line-height: 48px;
     background-color: #000;
+    scroll-behavior: smooth;
     video{
         height: 829px;
         width: 100%;

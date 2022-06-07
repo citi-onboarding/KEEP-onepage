@@ -21,7 +21,7 @@ export const Banner: React.FC = () => {
 const btnscrollaboutus= document.querySelector("#scrollaboutus");
 btnscrollaboutus?.addEventListener('click', function() {
     window.scrollTo({
-        top: 678.22,
+        top: 695.5,
         left: 0,
         behavior: 'smooth'
     });
