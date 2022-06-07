@@ -6,7 +6,6 @@ import AudiovisualController from '@controllers/AudiovisualController';
 const routes = express.Router();
 const allController = new AllController();
 const audiovisualController = new AudiovisualController();
-const routes = express.Router();
 const bannerController = new BannerController();
 
 
