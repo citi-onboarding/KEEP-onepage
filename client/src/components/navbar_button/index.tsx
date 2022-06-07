@@ -14,7 +14,7 @@ export const Navbar_Button: React.FC = () => {
     const scrollaboutus= document.querySelector("#aboutus");
     scrollaboutus?.addEventListener('click', ()=>{
         window.scrollTo({
-            top: 695.5,
+            top: 666.19,
             left: 0,
             behavior: "smooth"
         });
@@ -22,7 +22,7 @@ export const Navbar_Button: React.FC = () => {
     const scrollmedia= document.querySelector("#media");
     scrollmedia?.addEventListener('click', ()=>{
         window.scrollTo({
-            top: 1532,
+            top: 1466.188,
             left: 0,
             behavior: "smooth"
         });
