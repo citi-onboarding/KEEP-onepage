@@ -5,10 +5,10 @@ type OptionProps = {
     text: string;
 }
 
-export const Option: React.ElementType = ({text}: OptionProps) => {
+export const Option: React.ElementType = ({text, ...props}: OptionProps) => {
     return(
 
-    <OptionContainer>
+    <OptionContainer {...props}>
        <p>{text}</p> 
     </OptionContainer>
 
