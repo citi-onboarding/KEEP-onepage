@@ -11,8 +11,6 @@ const designController = new DesignController();
 const photographyController = new PhotographyController();
 const allController = new AllController();
 const audiovisualController = new AudiovisualController();
-
-const routes = express.Router();
 const bannerController = new BannerController();
 
 
