@@ -30,7 +30,7 @@ export const Portfolio: React.FC = () => {
         <nav>
            <Option text = "Todos" onClick = {() => { setOption('all') }} /> 
            <Option text = "Audiovisual" onClick = {() => { setOption('audiovisual')}}/> 
-           <Option text = "Fotografia" onClick = {() => setOption('photograph')}/> 
+           <Option text = "Fotografia" onClick = {() => setOption('photography')}/> 
            <Option text = "Design" onClick = {() => setOption('design')}/> 
         </nav>
 
@@ -49,5 +49,5 @@ export const Portfolio: React.FC = () => {
         <button><p>Ver mais</p></button>
         </PortfolioContainer>
     );
+    
 }
-
