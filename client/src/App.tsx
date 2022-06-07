@@ -4,12 +4,13 @@ import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
 
-import { Navbar } from './pages';
+import { Banner, Navbar } from './pages';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar/>
+      <Banner/>
       <GlobalStyle/>
     </ThemeProvider>
   );
