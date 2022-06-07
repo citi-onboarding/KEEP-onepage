@@ -8,6 +8,7 @@ export const PortfolioContainer = styled.div`
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-bottom: 180px;
 
     h1{
         width: 742px;
