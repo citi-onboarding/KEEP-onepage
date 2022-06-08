@@ -23,6 +23,12 @@ export const GridContainer = styled.div`
         display: block;
         height: fit-content;
     }
+    iframe{
+        max-width: 743px;
+        display: block;
+        max-height: 530px;
+    
+    }
 
 
 `;
@@ -32,6 +38,15 @@ export const Media1 = styled.div`
 `;
 export const Media2 = styled.div`
     grid-area: Media2;
+
+    position: relative;
+    width: 100%;
+
+    iframe{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 `;
 export const Media3 = styled.div`
      grid-area: Media3;
@@ -41,9 +56,27 @@ export const Media4 = styled.div`
 `;
 export const Media5 = styled.div`
     grid-area: Media5;
+
+    position: relative;
+    width: 100%;
+
+    iframe{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 `;
 export const Media6 = styled.div`
      grid-area: Media6;
+
+     position: relative;
+     width: 100%;
+
+    iframe{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 `;
 export const Media7 = styled.div`
      grid-area: Media7;
