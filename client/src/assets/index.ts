@@ -1,3 +1,6 @@
+import Audiovisual from './audiovisual.png'
+import Design from './design.png'
+import Fotografia from './fotografia.png'
 import LogoCITi from './logo.png';
 import LogoKEEP from './logo-keep.png';
 import Insta from './instagram.png';
@@ -31,5 +34,8 @@ export {
     Vector3, 
     Vector4, 
     Union,
-    LogoKEEP
+    LogoKEEP,
+    Audiovisual, 
+    Design, 
+    Fotografia
 };
