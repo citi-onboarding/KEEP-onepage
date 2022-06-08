@@ -1,3 +1,6 @@
+import Audiovisual from './audiovisual.png'
+import Design from './design.png'
+import Fotografia from './fotografia.png'
 import LogoCITi from './logo.png';
 import Union from './union.png'
 import ActiveBanner from './ActiveBanner.png';
@@ -37,5 +40,8 @@ export {
     Union,
     ActiveBanner,
     HoverBanner,
-    LAUNCH
+    LAUNCH,
+    Audiovisual,
+    Design,
+    Fotografia
 };
