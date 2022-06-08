@@ -33,7 +33,7 @@ export {
     Vector4, 
     Union,
     LogoKEEP,
-    Audiovisual,
-    Design,
+    Audiovisual, 
+    Design, 
     Fotografia
 };
