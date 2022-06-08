@@ -7,6 +7,7 @@ import AllController from '@controllers/AllController';
 import AudiovisualController from '@controllers/AudiovisualController';
 
 const routes = express.Router();
+
 const designController = new DesignController();
 const photographyController = new PhotographyController();
 const allController = new AllController();
