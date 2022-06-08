@@ -1,7 +1,6 @@
 import Audiovisual from './audiovisual.png'
 import Design from './design.png'
 import Fotografia from './fotografia.png'
-import LogoCITi from './logo.png';
 import LogoKEEP from './logo-keep.png';
 import Insta from './instagram.png';
 import InstaHover from './instagram-hover.png'
@@ -19,7 +18,6 @@ import Union from './union.png';
 import LogoKEEPNavbar from './KEEP[NEGATIVA].png';
 
 export {
-    LogoCITi,
     LogoKEEPNavbar,
     Insta,
     InstaHover,
