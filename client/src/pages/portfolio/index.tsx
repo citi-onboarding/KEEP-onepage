@@ -6,13 +6,16 @@ import { Grid  } from "../../components/grid";
 
 type MediaInfos = {
     media: string;
+     
+
+     
 }
 
 export const Portfolio: React.FC = () => {
     
-    let tags = []
+    const tags = []
     
-    function isVideo(item: object, index:string ) {
+    function isVideo(item: MediaInfos, index:number ) {
         if(item.media.indexOf('youtube') !== -1){
             return tags.push(`<iframe src={media${index}}><iframe/>`);
         }
@@ -22,7 +25,7 @@ export const Portfolio: React.FC = () => {
 
     const [option, setOption] = useState<string>('all');
     const [medias, setMedias] = useState<MediaInfos[]>([]);
-    medias.map(isVideo())
+    medias.map(isVideo(item, index))
 
     const getMedias = async () => {
         const response = await axios.get(`http://localhost:3001/${option}`)
