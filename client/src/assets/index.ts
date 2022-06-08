@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 import Audiovisual from './audiovisual.png'
 import Design from './design.png'
 import Fotografia from './fotografia.png'
-
-export {
-    Audiovisual, Design, Fotografia
-=======
-import LogoCITi from './logo.png';
 import LogoKEEP from './logo-keep.png';
 import Insta from './instagram.png';
 import InstaHover from './instagram-hover.png'
@@ -24,7 +18,6 @@ import Union from './union.png';
 import LogoKEEPNavbar from './KEEP[NEGATIVA].png';
 
 export {
-    LogoCITi,
     LogoKEEPNavbar,
     Insta,
     InstaHover,
@@ -39,6 +32,8 @@ export {
     Vector3, 
     Vector4, 
     Union,
-    LogoKEEP
->>>>>>> 8cbbbfb50a1f8cf7140d58cdd3f7e5a7ba9be3e8
+    LogoKEEP,
+    Audiovisual,
+    Design,
+    Fotografia
 };
