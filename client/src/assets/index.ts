@@ -1,7 +1,6 @@
 import Audiovisual from './audiovisual.png'
 import Design from './design.png'
 import Fotografia from './fotografia.png'
-import LogoCITi from './logo.png';
 import Union from './union.png'
 import ActiveBanner from './ActiveBanner.png';
 import HoverBanner from './HoverBanner.png';
@@ -22,7 +21,6 @@ import Vector4 from './vector4.png';
 import LogoKEEPNavbar from './KEEP[NEGATIVA].png';
 
 export {
-    LogoCITi,
     LogoKEEPNavbar,
     Insta,
     InstaHover,

@@ -56,3 +56,8 @@ export const FLEX=styled.div`
     display: flex;
     flex-direction: column;
 `;
+export const Div=styled.div`
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+`;
