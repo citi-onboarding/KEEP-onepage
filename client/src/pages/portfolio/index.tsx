@@ -9,9 +9,20 @@ type MediaInfos = {
 }
 
 export const Portfolio: React.FC = () => {
+    
+    let tags = []
+    
+    function isVideo(item: object, index:string ) {
+        if(item.media.indexOf('youtube') !== -1){
+            return tags.push(`<iframe src={media${index}}><iframe/>`);
+        }
+        else return tags.push(`<img src={media${index}}/>`);
+    
+    }
 
     const [option, setOption] = useState<string>('all');
     const [medias, setMedias] = useState<MediaInfos[]>([]);
+    medias.map(isVideo())
 
     const getMedias = async () => {
         const response = await axios.get(`http://localhost:3001/${option}`)
@@ -22,6 +33,8 @@ export const Portfolio: React.FC = () => {
        getMedias()
     }, [option]);
 
+    
+    
 
     return (
         <PortfolioContainer>
@@ -35,12 +48,13 @@ export const Portfolio: React.FC = () => {
         </nav>
 
         <section>
-            <Grid media1="https://lh3.googleusercontent.com/pw/AM-JKLUXWV_Yy9NLpRCgIHRNSaVuZ1Qb0WcHw5hKO8dPEYQ6zl3XXsQPJPJEqR80S5Ru2Lyvcih7t7ekyfj4QjRLf3yFR5PgEwpUdWzohelycrrCh35BXcViig1kfQsB2XAK5_29-l8ml4cUT0M_eaLLnEI=w359-h261-no?authuser=0"     
-            media2 = "https://www.youtube.com/embed/Q3i0v26IAJg"
+            <Grid 
+            tag1 = {tags[0]} media1={medias[0]?.media}     
+            media2 = {medias[1]?.media}
             media3 = {medias[2]?.media}
             media4 = {medias[3]?.media}
-            media5 = "https://www.youtube.com/embed/0uFB92lXmUc"
-            media6 = "https://www.youtube.com/embed/2FiKxEnET3g"
+            media5 = {medias[4]?.media}
+            media6 = {medias[5]?.media}
             media7 = {medias[6]?.media}
             media8 = {medias[7]?.media}/>
         </section>
