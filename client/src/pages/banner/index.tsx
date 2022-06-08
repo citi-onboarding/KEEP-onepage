@@ -1,6 +1,7 @@
 import React from "react";
 import { BannerContainer, Text, Button, Aux, Icon, FLEX} from "./style";
 import { LAUNCH } from "../../assets";
+
 const btnscrollaboutus= document.querySelector("#scrollaboutus");
     btnscrollaboutus?.addEventListener('click', function() {
         window.scrollTo({
