@@ -50,7 +50,7 @@ export const Portfolio: React.FC = () => {
         </section>
         
 
-        <button><p>Ver mais</p></button>
+        <button><a href= "https://www.instagram.com/keep.visuals/" target="_blank"><p>Ver mais</p></a></button>
         </PortfolioContainer>
     );
     
