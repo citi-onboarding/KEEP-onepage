@@ -18,7 +18,6 @@ export const Portfolio: React.FC = () => {
     const [option, setOption] = useState<string>('all');
     const [medias, setMedias] = useState<MediaInfos[]>([]);
     
-
     const getMedias = async () => {
         const response = await axios.get(`http://localhost:3001/${option}`)
         setMedias(response.data)
@@ -28,8 +27,6 @@ export const Portfolio: React.FC = () => {
        getMedias() 
     }, [option]);
     
-    
-
     return (
         <PortfolioContainer>
 
@@ -42,7 +39,7 @@ export const Portfolio: React.FC = () => {
 
         <section>
             <Grid 
-            media1={medias[0]?.media}     
+            media1 = {medias[0]?.media}     
             media2 = {medias[1]?.media}
             media3 = {medias[2]?.media}
             media4 = {medias[3]?.media}

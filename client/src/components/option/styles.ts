@@ -32,7 +32,8 @@ background-color: transparent;
         }   
     
         &:hover {
-            color: #FFFFFF;;
+            color: #FFFFFF;
+            cursor: pointer;
             
             &::before {
                 visibility: visible;

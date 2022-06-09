@@ -13,7 +13,7 @@ type GridProps = {
     media8: string
 };
 
-export const Grid: React.ElementType = ({media1, media2, media3, media4, media5, media6, media7, media8, tag1}: GridProps) => {
+export const Grid: React.ElementType = ({media1, media2, media3, media4, media5, media6, media7, media8}: GridProps) => {
     return(
         <GridContainer>
         <Media1>{media1?.indexOf('youtube') !== -1? <iframe src={media1} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> : <img src={media1}/>}</Media1>
@@ -27,5 +27,3 @@ export const Grid: React.ElementType = ({media1, media2, media3, media4, media5,
         </GridContainer>
     );
 }
-
-//
