@@ -7,7 +7,6 @@ export const Button_Container = styled.div`
     flex-wrap: wrap;
     width: 400px;
     height: 124px;
-    
     p{
         font-size: 18px;
         font-weight: 400;  
@@ -17,8 +16,6 @@ export const Button_Container = styled.div`
         text-decoration: none;
         font-weight: 400;
         transition: all .35s ease;
-        
-        
         &::before {
             content: ""; 
             position: absolute;
@@ -31,18 +28,15 @@ export const Button_Container = styled.div`
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
             -webkit-transition: all 0.3s ease-in-out 0s; 
-            transition: all 0.3s ease-in-out 0s; 
-            
-        }   
-    
+            transition: all 0.3s ease-in-out 0s;  
+        }
         &:hover {
             color: #FFFFFF;;
-            
             &::before {
                 visibility: visible;
                 -webkit-transform: scaleX(1);
                 transform: scaleX(1);
-            }   
+            }
         } 
     }
     button{
@@ -50,11 +44,9 @@ export const Button_Container = styled.div`
         height: 24px;
         background-color: transparent;
         border: 0;
-        scroll-behavior: smooth;
         :active{
             p{
                 color: #1a1a1a;
-                
                 &::before{
                     content: ""; 
                     position: absolute;
@@ -81,4 +73,4 @@ export const Button_Container = styled.div`
             }
         }
     }
-`
+`;
