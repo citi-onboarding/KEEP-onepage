@@ -2,6 +2,7 @@ import express from 'express';
 import BannerController from '@controllers/BannerController'
 import AllController from '@controllers/AllController';
 import AudiovisualController from '@controllers/AudiovisualController';
+import { SendMail } from '@controllers/MailController';
 
 const routes = express.Router();
 
@@ -25,5 +26,7 @@ routes.post('/audiovisual', audiovisualController.create);
 routes.get('/audiovisual', audiovisualController.get);
 routes.delete('/audiovisual/:id', audiovisualController.delete);
 routes.put('/audiovisual/:id', audiovisualController.update);
+
+routes.post('/email', SendMail);
 
 export default routes;
