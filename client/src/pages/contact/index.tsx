@@ -38,9 +38,9 @@ const handleSubmit = (e) => {
             <form onSubmit={handleSubmit}>
                 <h1>Contato</h1>   
                 <label>Nome</label>
-                <input type="text" name="name" onChange={handleInputChange} required ></input>
+                <input type="text" name="name" onChange={handleInputChange} required />
                 <label>Telefone</label>
-                <input type="number" name="phone" onChange={handleInputChange} required></input>
+                <input type="number" name="phone" onChange={handleInputChange} required />
                 <label>O que você deseja fazer?</label>
                 <select name="option" style={{color: 'white'}}>
                     <option style={{display: 'none'}} value="0"></option>
@@ -50,7 +50,7 @@ const handleSubmit = (e) => {
                     <option style={{color: '#141414'}} value="outro" >Outro assunto</option>
                     </select>
                 <label>Nos conte a sua ideia! </label>
-                <textarea id="text" name="message" onChange={handleInputChange} required></textarea>
+                <textarea id="text" name="message" onChange={handleInputChange} required/>
 
                 <button type="submit">Enviar</button>
             </form> 
