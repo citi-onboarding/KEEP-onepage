@@ -18,9 +18,6 @@ import Union from './union.png';
 import LogoKEEPNavbar from './KEEP[NEGATIVA].png';
 
 export {
-    Audiovisual,
-    Design,
-    Fotografia,
     LogoKEEPNavbar,
     Insta,
     InstaHover,
@@ -35,5 +32,8 @@ export {
     Vector3, 
     Vector4, 
     Union,
-    LogoKEEP
+    LogoKEEP,
+    Audiovisual, 
+    Design, 
+    Fotografia
 };
