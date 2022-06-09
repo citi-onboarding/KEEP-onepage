@@ -9,37 +9,44 @@ type MediaInfos = {
      
 }
 
+type TagsType = {
+    tag: any
+}
+
 export const Portfolio: React.FC = () => {
-    /*
-    const tags = []
     
-    function isVideo(item: MediaInfos, index: number ) {
-        if(item.media.indexOf('youtube') !== -1){
-            return tags.push(`<iframe src={media${index}}><iframe/>`);
-        }
-        else return tags.push(`<img src={media${index}}/>`);
     
-    }
-    */
+    //const [tags, setTags] = useState<TagsType[]>([])
     const [option, setOption] = useState<string>('all');
     const [medias, setMedias] = useState<MediaInfos[]>([]);
-    
+    /*
+    const getTags = (item: MediaInfos, i:number ) => {
+        console.log(item.media)        
+        if(item.media.indexOf('youtube') !== -1){
+            return {tag: `<iframe src="${item.media}"/><iframe>`};
+        }  
+
+        return {tag:`<img src="${item.media}"/>`};
+    }
+    */
 
     const getMedias = async () => {
         const response = await axios.get(`http://localhost:3001/${option}`)
         setMedias(response.data)
     }
-
+    
     useEffect(() => {
-       getMedias()
+       getMedias() 
     }, [option]);
-
+    
     /*
     useEffect(() => {
-        medias.map(isVideo())
+       const newTags = medias.map(getTags)
+       setTags(newTags) 
+       console.log(newTags)
+       console.log(tags)
      }, [medias]);
     */
-    
     
 
     return (
@@ -54,7 +61,6 @@ export const Portfolio: React.FC = () => {
 
         <section>
             <Grid 
-            //tag1 = {tags[0]} 
             media1={medias[0]?.media}     
             media2 = {medias[1]?.media}
             media3 = {medias[2]?.media}
