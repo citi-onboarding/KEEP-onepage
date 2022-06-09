@@ -41,8 +41,23 @@ export const FooterContainer = styled.div`
             justify-content: flex-end;
             align-items: flex-end;
             margin-left: 20px;
+        } 
+    }
+
+    @media (max-width: 700){
+        nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            ul{
+                justify-content: center;
+                align-items: center;
+                margin-left: 0px;
+            }
+
         }
-        
+            
     }
 `;
 
@@ -54,16 +69,24 @@ export const FooterContent = styled.div`
   box-sizing: border-box;
   padding-bottom: 40px;
   border-bottom: 1px solid #FFFFFF;
+
+  @media (max-width: 700px) {
+      img{
+          display: none;
+      }
+  }
+
     
   
 `;
 
 
 export const Signature = styled.p`
+    align-self: center;
     p{
         font-size: 18px;
         margin-top: 24px;
-        align-self: center;
+       
         font-weight: 400;
         font-family: 'Sora', sans-serif;
         color: #FFFFFF;  
