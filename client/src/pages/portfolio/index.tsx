@@ -7,12 +7,10 @@ import { Grid  } from "../../components/grid";
 type MediaInfos = {
     media: string;
      
-
-     
 }
 
 export const Portfolio: React.FC = () => {
-    
+    /*
     const tags = []
     
     function isVideo(item: MediaInfos, index: number ) {
@@ -22,7 +20,7 @@ export const Portfolio: React.FC = () => {
         else return tags.push(`<img src={media${index}}/>`);
     
     }
-
+    */
     const [option, setOption] = useState<string>('all');
     const [medias, setMedias] = useState<MediaInfos[]>([]);
     
@@ -36,16 +34,16 @@ export const Portfolio: React.FC = () => {
        getMedias()
     }, [option]);
 
+    /*
     useEffect(() => {
         medias.map(isVideo())
      }, [medias]);
-
+    */
     
     
 
     return (
         <PortfolioContainer>
-        <h1>Frase sobre dar uma olhada no nosso trabalho(Portifolio)</h1>
 
         <nav>
            <Option text = "Todos" onClick = {() => { setOption('all') }} /> 
@@ -56,7 +54,8 @@ export const Portfolio: React.FC = () => {
 
         <section>
             <Grid 
-            tag1 = {tags[0]} media1={medias[0]?.media}     
+            //tag1 = {tags[0]} 
+            media1={medias[0]?.media}     
             media2 = {medias[1]?.media}
             media3 = {medias[2]?.media}
             media4 = {medias[3]?.media}

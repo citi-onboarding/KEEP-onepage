@@ -10,14 +10,6 @@ export const PortfolioContainer = styled.div`
     margin: 0 auto;
     margin-bottom: 180px;
 
-    h1{
-        width: 742px;
-        font-family: 'Monument Extended', sans-serif;
-        color: #f5f5f5;
-        font-size: 32px;
-        font-weight: 400px;
-        text-align: center;
-    }
     nav{
         display: flex;
         flex-direction: row;
