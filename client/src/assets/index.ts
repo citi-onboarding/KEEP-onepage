@@ -1,6 +1,10 @@
 import Audiovisual from './audiovisual.png'
 import Design from './design.png'
 import Fotografia from './fotografia.png'
+import Union from './seta.png'
+import ActiveBanner from './ActiveBanner.png';
+import HoverBanner from './HoverBanner.png';
+import LAUNCH from './LAUNCH.mp4';
 import LogoKEEP from './logo-keep.png';
 import Insta from './instagram.png';
 import InstaHover from './instagram-hover.png'
@@ -14,7 +18,6 @@ import Vector1 from './vector1.png';
 import Vector2 from './vector2.png';
 import Vector3 from './vector3.png';
 import Vector4 from './vector4.png';
-import Union from './union.png';
 import LogoKEEPNavbar from './KEEP[NEGATIVA].png';
 
 export {
@@ -31,9 +34,12 @@ export {
     Vector2, 
     Vector3, 
     Vector4, 
-    Union,
     LogoKEEP,
-    Audiovisual, 
-    Design, 
+    Union,
+    ActiveBanner,
+    HoverBanner,
+    LAUNCH,
+    Audiovisual,
+    Design,
     Fotografia
 };
