@@ -25,6 +25,7 @@ export const Footer: React.FC = () => {
             <div></div>
 
             <Signature>
+                <p>
                 Made with 
                 {' '}
                 &lt; &#x0002F; &gt; 
@@ -36,6 +37,7 @@ export const Footer: React.FC = () => {
                 by 
                 {'  '}
                 <img src={Citi} alt="CITi"/> 
+                </p>
             </Signature>
 
             
