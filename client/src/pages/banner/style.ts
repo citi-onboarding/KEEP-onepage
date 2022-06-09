@@ -37,19 +37,24 @@ export const Aux= styled.div`
     height: 97px;
     display: flex;
     justify-content: center;
+    button{
+        background-image: url(${Union});
+        height: 56px;
+        width: 56px;
+        background-color: transparent;
+        border: 0ch;
+        
+        &:hover{
+            background-image: url(${HoverBanner});
+        }
+        &:active{
+            background-image: url(${ActiveBanner});
+            scroll-behavior: smooth;
+        }
+    }
 `; 
 export const Icon= styled.div`
-    background-image: url(${Union});
-    height: 56px;
-    width: 56px;
     
-    &:hover{
-        background-image: url(${HoverBanner});
-    }
-    &:active{
-        background-image: url(${ActiveBanner});
-        scroll-behavior: smooth;
-    }
 `;
 export const FLEX=styled.div`
     position: absolute;
