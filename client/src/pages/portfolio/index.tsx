@@ -15,7 +15,7 @@ export const Portfolio: React.FC = () => {
     
     const tags = []
     
-    function isVideo(item: MediaInfos, index:number ) {
+    function isVideo(item: MediaInfos, index: number ) {
         if(item.media.indexOf('youtube') !== -1){
             return tags.push(`<iframe src={media${index}}><iframe/>`);
         }
@@ -25,7 +25,7 @@ export const Portfolio: React.FC = () => {
 
     const [option, setOption] = useState<string>('all');
     const [medias, setMedias] = useState<MediaInfos[]>([]);
-    medias.map(isVideo(item, index))
+    
 
     const getMedias = async () => {
         const response = await axios.get(`http://localhost:3001/${option}`)
@@ -35,6 +35,10 @@ export const Portfolio: React.FC = () => {
     useEffect(() => {
        getMedias()
     }, [option]);
+
+    useEffect(() => {
+        medias.map(isVideo())
+     }, [medias]);
 
     
     
