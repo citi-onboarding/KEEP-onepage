@@ -60,12 +60,15 @@ export const FooterContent = styled.div`
 
 
 export const Signature = styled.p`
-    font-size: 18px;
-    margin-top: 24px;
-    align-self: center;
-    font-weight: 400;
-    font-family: 'Sora', sans-serif;
-    color: #FFFFFF;
+    p{
+        font-size: 18px;
+        margin-top: 24px;
+        align-self: center;
+        font-weight: 400;
+        font-family: 'Sora', sans-serif;
+        color: #FFFFFF;  
+    }
+    
 `;
 
 export const InstagramIcon = styled.div`
