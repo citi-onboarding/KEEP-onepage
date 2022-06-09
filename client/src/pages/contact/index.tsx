@@ -9,12 +9,12 @@ export const Contact: React.ElementType = () => {
 
 const [formValues, setFormValues] = useState({});
 
-const handleInputChange = (e) => {
+const handleInputChange = (e: any) => {
     const { name, value } = e.target;
     setFormValues({...formValues, [name]: value});
 }
 
-const handleSubmit = (e) => {
+const handleSubmit = (e: any) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
