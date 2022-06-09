@@ -10,8 +10,7 @@ type GridProps = {
     media5: string,
     media6: string,
     media7: string,
-    media8: string,
-    tag1: string
+    media8: string
 };
 
 export const Grid: React.ElementType = ({media1, media2, media3, media4, media5, media6, media7, media8, tag1}: GridProps) => {
