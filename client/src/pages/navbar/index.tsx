@@ -1,5 +1,5 @@
 import React from "react";
-import { NavbarContainer, Contact, KEEP, Aux } from './styles';
+import { NavbarContainer, Contact, KEEP, Aux} from './styles';
 import { LogoKEEPNavbar } from '../../assets';
 import { Navbar_Button } from "../../components";
 
@@ -10,7 +10,7 @@ export const Navbar: React.FC = () => {
             <KEEP><img src={LogoKEEPNavbar} alt="" /></KEEP>
             <Navbar_Button/><Aux>
             <Contact>
-            <button onClick={()=>{window.scrollTo({top:3015.188, left:0, behavior:"smooth"})}}><p>Contato</p></button>
+            <a href=".sidea">Contato</a>
             </Contact></Aux>
         </NavbarContainer>
     );

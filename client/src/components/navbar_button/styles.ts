@@ -39,11 +39,12 @@ export const Button_Container = styled.div`
             }
         } 
     }
-    button{
+    a{
         margin-top: 49px;
         height: 24px;
         background-color: transparent;
         border: 0;
+        text-decoration: none;
         :active{
             p{
                 color: #1a1a1a;
