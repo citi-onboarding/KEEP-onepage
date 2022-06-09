@@ -1,5 +1,25 @@
 import styled from 'styled-components'; 
 
+export const BiggerContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .gridTitle{
+        display: inline;
+        justify-content: center;
+        width: 742px;
+        font-family: 'Monument Extended', sans-serif;
+        color: #f5f5f5;
+        font-size: 32px;
+        font-weight: 400;
+        text-align: center;
+  
+  }
+
+`;
+
 
 export const AboutUsContainer = styled.div`
   background-color: #141414;
@@ -91,5 +111,7 @@ export const AboutUsContainer = styled.div`
     border: #1A1A1A;
     color: #FFFFFF;
   }
+
+  
 
 `;
