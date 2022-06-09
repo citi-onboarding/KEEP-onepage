@@ -9,13 +9,20 @@ import { Footer } from './pages';
 import { Contact } from './pages/contact';
 import { Navbar } from './pages';
 import { AboutUs } from './pages';
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar/>
+<<<<<<< HEAD
       <Banner/>
+=======
+>>>>>>> main
       <AboutUs/>
       <Contact/>
       <Footer/>
