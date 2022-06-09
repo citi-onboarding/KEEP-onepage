@@ -19,7 +19,7 @@ export const Banner: React.FC = () => {
      }, []);
     return(
         <BannerContainer>
-            <iframe src={infos[0]?.media} allow="autoplay" />
+            <video src={LAUNCH} autoPlay loop muted/>
             <FLEX>
             <Text><h1>{infos[0]?.title}</h1></Text>
             <Button><Aux><button onClick={()=>{ window.scrollTo({ top:666.19, left:0, behavior:'smooth'})}} ></button></Aux></Button></FLEX>          
