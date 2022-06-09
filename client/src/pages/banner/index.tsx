@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import { BannerContainer, Text, Button, Aux, Icon, FLEX} from "./style";
+import { BannerContainer, Text, Button, Aux, FLEX} from "./style";
 import { LAUNCH } from "../../assets";
 
 type BannerData = {
     media: string;
     title: string;
 };
+var scrollSeta: number= BannerContainer.style;
+alert(scrollSeta);
 export const Banner: React.FC = () => {
     const [infos, setInfos] = useState<BannerData[]>([]);
     const Getinfo = async()=>{
@@ -19,7 +21,7 @@ export const Banner: React.FC = () => {
      }, []);
     return(
         <BannerContainer>
-            <video src={LAUNCH} autoPlay loop muted/>
+            <video src={LAUNCH} autoPlay loop muted  />
             <FLEX>
             <Text><h1>{infos[0]?.title}</h1></Text>
             <Button><Aux><button onClick={()=>{ window.scrollTo({ top:666.19, left:0, behavior:'smooth'})}} ></button></Aux></Button></FLEX>          

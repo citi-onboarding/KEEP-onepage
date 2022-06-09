@@ -8,14 +8,16 @@ export const BannerContainer = styled.div`
     scroll-behavior: smooth;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     video{
-        width: 1348px;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0%;
     }
 `;
 export const Text = styled.div`
     height: 48px;
-    width: 1348px;
-    margin-top: 618.19px;
+    width: 100%;
     display: flex;
     justify-content: center;
     h1{
@@ -57,7 +59,10 @@ export const Icon= styled.div`
     
 `;
 export const FLEX=styled.div`
+    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
 `;
