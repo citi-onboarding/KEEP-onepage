@@ -16,7 +16,6 @@ export const Button_Container = styled.div`
         text-decoration: none;
         font-weight: 400;
         transition: all .35s ease;
-        
         &::before {
             content: ""; 
             position: absolute;
@@ -29,25 +28,23 @@ export const Button_Container = styled.div`
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
             -webkit-transition: all 0.3s ease-in-out 0s; 
-            transition: all 0.3s ease-in-out 0s; 
-            
-        }   
-    
+            transition: all 0.3s ease-in-out 0s;  
+        }
         &:hover {
             color: #FFFFFF;;
-            
             &::before {
                 visibility: visible;
                 -webkit-transform: scaleX(1);
                 transform: scaleX(1);
-            }   
+            }
         } 
     }
-    button{
+    a{
         margin-top: 49px;
         height: 24px;
         background-color: transparent;
         border: 0;
+        text-decoration: none;
         :active{
             p{
                 color: #1a1a1a;
@@ -77,4 +74,4 @@ export const Button_Container = styled.div`
             }
         }
     }
-`
+`;
