@@ -1,3 +1,7 @@
+
+import Imagem from './imagem.png';
+import Storie from './storie.png';
+import Video from './video.png';
 import Audiovisual from './audiovisual.png'
 import Design from './design.png'
 import Fotografia from './fotografia.png'
@@ -41,5 +45,8 @@ export {
     LAUNCH,
     Audiovisual,
     Design,
-    Fotografia
+    Fotografia,
+    Imagem,
+    Storie,
+    Video
 };
