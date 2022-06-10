@@ -21,9 +21,11 @@ const handleSubmit = (e: any) => {
 
     axios.post('http://localhost:3001/email', data)
     .then(() => {
+        alert("Obrigado por confiar em nós! Em breve, entraremos em contato com você através do WhatsApp.");
         console.log('Nenhum erro encontrado');
     })
     .catch(() => {
+        alert("Ocorreu um erro ao enviar o formulário. Tente novamente.");
         console.log('Ocorreu um erro');
     })
 

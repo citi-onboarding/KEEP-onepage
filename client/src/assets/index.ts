@@ -1,3 +1,7 @@
+import LogoCITi from './logo.png';
+import Imagem from './imagem.png';
+import Storie from './storie.png';
+import Video from './video.png';
 import Audiovisual from './audiovisual.png'
 import Design from './design.png'
 import Fotografia from './fotografia.png'
@@ -42,4 +46,10 @@ export {
     Audiovisual,
     Design,
     Fotografia
+
+
+    LogoCITi,
+    Imagem,
+    Storie,
+    Video
 };
