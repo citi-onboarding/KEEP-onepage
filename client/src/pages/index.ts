@@ -1,3 +1,4 @@
+import { Portfolio } from './portfolio';
 import { Footer } from './footer'
 import { Contact } from './contact'
 import { Navbar } from './navbar';
@@ -10,4 +11,5 @@ export {
     Navbar,
     Banner,
     AboutUs,
+    Portfolio
 };
