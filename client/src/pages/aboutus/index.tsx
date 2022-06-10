@@ -47,7 +47,7 @@ export const AboutUs: React.FC = () => {
                 </div>    
             </AboutUsContainer>
 
-            <h1 className="gridTitle">{infos[0]?.grid_title}</h1>
+            <h1 id="gridTitle">{infos[0]?.grid_title}</h1>
         </BiggerContainer>
         
     );

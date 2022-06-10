@@ -1,6 +1,5 @@
 import React from 'react';
 import {GridContainer, Media1, Media2, Media3, Media4, Media5, Media6, Media7, Media8} from './styles';
-import {Imagem, Video, Storie} from '../../assets';
 
 type GridProps = {
     media1: string,
