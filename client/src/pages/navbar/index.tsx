@@ -10,7 +10,7 @@ export const Navbar: React.FC = () => {
             <KEEP><img src={LogoKEEPNavbar} alt="" /></KEEP>
             <Navbar_Button/><Aux>
             <Contact>
-            <a href=".sidea">Contato</a>
+            <a href="#contact">Contato</a>
             </Contact></Aux>
         </NavbarContainer>
     );

@@ -12,6 +12,7 @@ export const NavbarContainer = styled.div`
     left: 0px;
     top: 0px;
     font-size: 18px;
+    z-index: 1;
 `;
 export const Aux = styled.div`
     height: 124px;
@@ -50,5 +51,5 @@ export const Contact = styled.div`
 export const KEEP = styled.div`
     height: 124px;
     display: flex;
-    align-items: center;
+    align-items: center
 `;

@@ -12,7 +12,7 @@ export const ContactContainer = styled.div`
 
   background-color: #141414;
 
-  .sidea{
+  #sidea{
     display: flex;
     flex-direction: column;
   }
@@ -49,14 +49,13 @@ export const ContactContainer = styled.div`
     align-self: end;
   }
 
-`;
-
-export const Form = styled.div`
+  form{
   margin-right: 8%;
   margin-left: 3%;
   display: flex;
   flex-direction: column;
   margin-bottom: 112px;
+  }
 
   h1 {
     text-align: center;
@@ -86,6 +85,20 @@ export const Form = styled.div`
     border: 1px solid #F5F5F5;
     box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.08);
   }
+
+  input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+   }
+
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #141414 inset;
+  }
+
+  input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+  }
+
 
   select {
     width: 100%;
