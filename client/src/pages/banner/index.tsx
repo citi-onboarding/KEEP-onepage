@@ -20,7 +20,7 @@ export const Banner: React.FC = () => {
         Getinfo()
      }, []);
     return(
-        <BannerContainer>
+        <BannerContainer id="top">
             <video src={LAUNCH} autoPlay loop muted  />
             <FLEX>
             <Text><h1 id="title">{infos[0]?.title}</h1></Text>

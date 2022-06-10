@@ -16,14 +16,17 @@ export const NavbarContainer = styled.div`
 `;
 export const Aux = styled.div`
     height: 124px;
+    
 `;
 export const Contact = styled.div`
-        p{
-            font-size: 14px;
-            color: #FFFFFF;
-            font-family: Monument Extended;
-        }
-    button{
+
+    a{
+        cursor: pointer;
+        transition: all 0.25s ease 0s;
+        font-size: 14px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: Monument Extended;
         margin-top: 43px;
         display: flex;
         align-items: center;
@@ -33,26 +36,20 @@ export const Contact = styled.div`
         height: 33px;
         padding: 8px 24px;
         background-color: transparent;
-    }
-    &:hover {
-            background-color: #FFFFFF;
-            p{
+
+        &:hover {
                 color: #1A1A1A;
                 border-color: #1A1A1A;
+                background-color: #FFFFFF;
             }
-        }
-    :active{
-        button{
-            background-color: #1A1A1A;
-            border: #1A1A1A;
-        }
-        p{
-            color: #FFFFFF;
+        :active{
+        color: #1A1A1A;
+        background-color: #F5F5F5;
         }
     }
 `;
 export const KEEP = styled.div`
     height: 124px;
     display: flex;
-    align-items: center;
+    align-items: center
 `;

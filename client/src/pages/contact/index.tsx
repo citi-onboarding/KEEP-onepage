@@ -33,12 +33,12 @@ const handleSubmit = (e: any) => {
 
     return (
         <ContactContainer>
-            <div className="sidea">
+            <div id="sidea">
                 <img src={Vector1} className="vector1" />
                 <img src={Vector3} className="vector3" />
             </div>
             <form onSubmit={handleSubmit}>
-                <h1>Contato</h1>   
+                <h1 id="contact">Contato</h1>   
                 <label>Nome</label>
                 <input type="text" name="name" onChange={handleInputChange} required />
                 <label>Telefone</label>

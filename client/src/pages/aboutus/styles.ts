@@ -6,7 +6,7 @@ export const BiggerContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  .gridTitle{
+  #gridTitle{
         display: inline;
         justify-content: center;
         width: 742px;

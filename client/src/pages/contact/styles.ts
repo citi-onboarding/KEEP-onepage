@@ -12,7 +12,7 @@ export const ContactContainer = styled.div`
 
   background-color: #141414;
 
-  .sidea{
+  #sidea{
     display: flex;
     flex-direction: column;
   }

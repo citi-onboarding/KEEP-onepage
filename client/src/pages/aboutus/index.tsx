@@ -43,11 +43,11 @@ export const AboutUs: React.FC = () => {
                     <h2 style={{paddingLeft: 40}}>Fotografia</h2>
                 </div>
 
-                <button type="button">Quero contratar</button>
+                <a href="#contact"><button type="button">Quero contratar</button></a>
                 </div>    
             </AboutUsContainer>
 
-            <h1 className="gridTitle">{infos[0]?.grid_title}</h1>
+            <h1 id="gridTitle">{infos[0]?.grid_title}</h1>
         </BiggerContainer>
         
     );
