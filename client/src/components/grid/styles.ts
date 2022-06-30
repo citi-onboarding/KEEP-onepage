@@ -10,8 +10,8 @@ export const GridContainer = styled.div`
     "Media6 Media5 Media5"
     "Media6 Media7 Media8";
     grid-gap:25px;
-    width: 1780px;
-    height: 1480px;
+    max-width: 1780px;
+    max-height: 1400px;
     padding-left: 120px;
     padding-right: 120px;
     box-sizing: border-box;
@@ -46,8 +46,8 @@ export const Media1 = styled.div`
     
 
     iframe{
-        width: 300px;
-        height: 223px;
+        max-width: 496.66px;
+        max-height: 354.64px;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -65,8 +65,8 @@ export const Media2 = styled.div`
     
 
     iframe{
-        width: 300px;
-        height: 223px;
+        max-width: 496.66px;
+        max-height: 354.64px;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -83,8 +83,8 @@ export const Media3 = styled.div`
     
 
     iframe{
-        width: 300px;
-        height: 223px;
+        max-width: 496.66px;
+        max-height: 354.64px;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -101,8 +101,8 @@ export const Media4 = styled.div`
     
 
     iframe{
-        width: 300px;
-        height: 223px;
+        max-width: 496.66px;
+        max-height: 354.64px;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -124,8 +124,8 @@ export const Media5 = styled.div`
     
 
     iframe{
-        width: 718px;
-        height: 541px;
+        max-width: 1018px;
+        max-height: 720px;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -143,7 +143,7 @@ export const Media6 = styled.div`
 
     iframe{
         width: 359px;
-        height: 541px;
+        max-height: 685px;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -160,8 +160,8 @@ export const Media7 = styled.div`
     
 
     iframe{
-        width: 300px;
-        height: 223px;
+        max-width: 496.66px;
+        max-height: 354.64px;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -179,8 +179,8 @@ export const Media8 = styled.div`
     
 
     iframe{
-        width: 300px;
-        height: 223px;
+        max-width: 496.66px;
+        max-height: 354.64px;
         position: absolute;
         width: 100%;
         height: 100%;
