@@ -11,13 +11,13 @@ export const GridContainer = styled.div`
     "Media6 Media7 Media8";
     grid-gap:25px;
     max-width: 1780px;
-    max-height: 1400px;
+    max-height: 1480px;
     padding-left: 120px;
     padding-right: 120px;
     box-sizing: border-box;
     justify-content: stretch;
     justify-items: stretch;
-
+ 
 
     img{
         max-width: 100%;
@@ -143,7 +143,7 @@ export const Media6 = styled.div`
 
     iframe{
         width: 359px;
-        max-height: 685px;
+        max-height: 717px;
         position: absolute;
         width: 100%;
         height: 100%;
