@@ -29,6 +29,7 @@ export const Text = styled.div`
     }
 `;
 export const Button = styled.div`
+    padding-top: 30px;
     background: linear-gradient(360deg, #141414 0%, rgba(33, 33, 33, 0) 100%);
     width: 100%;
     height: 97px;

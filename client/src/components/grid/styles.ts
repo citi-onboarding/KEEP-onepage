@@ -10,18 +10,22 @@ export const GridContainer = styled.div`
     "Media6 Media5 Media5"
     "Media6 Media7 Media8";
     grid-gap:25px;
-    width: 100%;
-    height: fit-content;
+    max-width: 1780px;
+    max-height: 1480px;
     padding-left: 120px;
     padding-right: 120px;
     box-sizing: border-box;
-
+    justify-content: stretch;
+    justify-items: stretch;
+ 
 
     img{
         max-width: 100%;
         display: block;
-        height: fit-content;
+        height: 100%;
+
     };
+
     iframe{
         max-width: 743px;
         display: block;
@@ -29,106 +33,157 @@ export const GridContainer = styled.div`
     
     }
 
+
 `;
 
 export const Media1 = styled.div`
    grid-area: Media1;
 
-   iframe{
-        max-width: 300px;
-        max-height: 223px;
+   .iframecontainer{
+        position: relative;
+        width: 100%;
+        padding-bottom: 71.42%;
+    
+
+    iframe{
+        max-width: 496.66px;
+        max-height: 354.64px;
         position: absolute;
         width: 100%;
         height: 100%;
     }
+   }
 
 `;
 export const Media2 = styled.div`
     grid-area: Media2;
 
-    position: relative;
-    width: 100%;
+    .iframecontainer{
+        position: relative;
+        width: 100%;
+        padding-bottom: 71.42%;
+    
 
     iframe{
-        max-width: 300px;
-        max-height: 223px;
+        max-width: 496.66px;
+        max-height: 354.64px;
         position: absolute;
         width: 100%;
         height: 100%;
-        
     }
+   }
 `;
 export const Media3 = styled.div`
      grid-area: Media3;
 
+     .iframecontainer{
+        position: relative;
+        width: 100%;
+        padding-bottom: 71.42%;
+    
+
     iframe{
-        max-width: 300px;
-        max-height: 223px;
+        max-width: 496.66px;
+        max-height: 354.64px;
         position: absolute;
         width: 100%;
         height: 100%;
-        
     }
+   }
 `;
 export const Media4 = styled.div`
     grid-area: Media4;
 
+    .iframecontainer{
+        position: relative;
+        width: 100%;
+        padding-bottom: 71.42%;
+    
+
     iframe{
-        max-width: 300px;
-        max-height: 223px;
+        max-width: 496.66px;
+        max-height: 354.64px;
         position: absolute;
         width: 100%;
         height: 100%;
     }
+   }
 `;
 export const Media5 = styled.div`
     grid-area: Media5;
 
-    position: relative;
-    width: 100%;
+    img{
+        max-width: 2048px;
+        max-height: 1463px;
+    }
+
+    .iframecontainer{
+        position: relative;
+        width: 100%;
+        padding-bottom: 71.42%;
+    
 
     iframe{
-        max-width: 625px;
-        max-height: 446.09px;
+        max-width: 1018px;
+        max-height: 720px;
         position: absolute;
         width: 100%;
         height: 100%;
     }
+   }
 `;
 export const Media6 = styled.div`
      grid-area: Media6;
 
-     position: relative;
-     width: 100%;
+    .iframecontainer{
+        position: relative;
+        width: 100%;
+        padding-bottom: 177%;
+    
 
     iframe{
+        width: 359px;
+        max-height: 717px;
         position: absolute;
         width: 100%;
         height: 100%;
     }
+   }
 `;
 export const Media7 = styled.div`
      grid-area: Media7;
 
-     iframe{
-        max-width: 300px;
-        max-height: 223px;
+     .iframecontainer{
+        position: relative;
+        width: 100%;
+        padding-bottom: 71.42%;
+    
+
+    iframe{
+        max-width: 496.66px;
+        max-height: 354.64px;
         position: absolute;
         width: 100%;
         height: 100%;
-        
     }
+   }
 
 `;
 export const Media8 = styled.div`
      grid-area: Media8;
 
-     iframe{
-        max-width: 300px;
-        max-height: 223px;
+     .iframecontainer{
+        position: relative;
+        width: 100%;
+        padding-bottom: 71.42%;
+    
+
+    iframe{
+        max-width: 496.66px;
+        max-height: 354.64px;
         position: absolute;
         width: 100%;
         height: 100%;
-        
     }
+   }
 `;

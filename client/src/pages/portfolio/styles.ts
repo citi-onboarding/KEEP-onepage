@@ -19,6 +19,10 @@ export const PortfolioContainer = styled.div`
 
     section{
         margin-top: 40px;
+        width: 100%;
+        height:100%;
+        display: flex;
+        justify-content: center;
     }
 
     button{
