@@ -17,6 +17,7 @@ export const GridContainer = styled.div`
     box-sizing: border-box;
     justify-content: stretch;
     justify-items: stretch;
+    margin: 0 auto;
  
 
     img{
